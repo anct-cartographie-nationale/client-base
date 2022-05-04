@@ -16,6 +16,18 @@
       "root": "projects/client-application",
       "sourceRoot": "projects/client-application/src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": {
+          "code": "fr",
+          "baseHref": ""
+        },
+        "locales": {
+          "en": {
+            "baseHref": "/en/",
+            "translation": "projects/client-application/src/locale/messages.en.xlf"
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -25,23 +37,50 @@
             "main": "projects/client-application/src/main.ts",
             "polyfills": "projects/client-application/src/polyfills.ts",
             "tsConfig": "projects/client-application/tsconfig.app.json",
+            "localize": true,
+            "allowedCommonJsDependencies": ["lodash", "leaflet.locatecontrol"],
             "inlineStyleLanguage": "scss",
-            "assets": ["projects/client-application/src/favicon.ico", "projects/client-application/src/assets"],
-            "styles": ["projects/client-application/src/styles.scss"],
-            "scripts": []
+            "assets": [
+              "projects/client-application/src/favicon.ico",
+              "projects/client-application/src/assets",
+              "projects/client-application/src/sitemap.xml",
+              "projects/client-application/src/robots.txt",
+              "projects/client-application/src/ngsw-worker.js",
+              "projects/client-application/src/ngsw.json",
+              "projects/client-application/src/manifest.webmanifest",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/leaflet/dist/images",
+                "output": "assets/"
+              }
+            ],
+            "styles": [
+              "projects/client-application/src/styles.scss",
+              "./node_modules/leaflet/dist/leaflet.css",
+              "./node_modules/leaflet.locatecontrol/dist/L.Control.Locate.css"
+            ],
+            "scripts": [],
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json",
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "15kb",
+                  "maximumError": "20kb"
                 }
               ],
               "fileReplacements": [
@@ -50,6 +89,13 @@
                   "with": "projects/client-application/src/environments/environment.prod.ts"
                 }
               ],
+              "optimization": true,
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "serviceWorker": true,
+              "ngswConfigPath": "ngsw-config.json",
               "outputHashing": "all"
             },
             "development": {
@@ -59,18 +105,34 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "fr": {
+              "localize": ["fr"]
+            },
+            "en": {
+              "localize": ["en"]
             }
           },
           "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "client-application:build",
+            "proxyConfig": "proxy.conf.json"
+          },
           "configurations": {
             "production": {
               "browserTarget": "client-application:build:production"
             },
             "development": {
               "browserTarget": "client-application:build:development"
+            },
+            "fr": {
+              "browserTarget": "client-application:build:fr"
+            },
+            "en": {
+              "browserTarget": "client-application:build:en"
             }
           },
           "defaultConfiguration": "development"
