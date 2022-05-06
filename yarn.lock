@@ -1641,10 +1641,10 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
   integrity sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==
 
-"@gouvfr-anct/mediation-numerique@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@gouvfr-anct/mediation-numerique/-/mediation-numerique-0.0.3.tgz#1339ad6124a02e5ab2cc17207923ef24c87a25b2"
-  integrity sha512-IoL/jHdQURzaIW0hfcTdlaHXAL1Ifdth7QBySt2BrxcZbEtj5B6a+r/NOA2EnjoEXf0OY7Yw2E9kCr++04EDlw==
+"@gouvfr-anct/mediation-numerique@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@gouvfr-anct/mediation-numerique/-/mediation-numerique-0.0.4.tgz#193e2bff39ac45a11cb7986a91fa6ed1c1638d33"
+  integrity sha512-QeKiROap+jk/Uk2V9NUMHL0PDHP40Bkgui6qK/WHxjs1c217MRwWKX+pxqkmk+6iJCjQhGRgGB48eqD3noGBgw==
   dependencies:
     tslib "^2.3.0"
 
