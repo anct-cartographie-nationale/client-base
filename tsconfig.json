@@ -3,6 +3,7 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "paths": {
+      "@features/*": ["projects/client-application/src/features/*"],
       "@gouvfr-anct/*": ["dist/@gouvfr-anct/*"]
     }
   }

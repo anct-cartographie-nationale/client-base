@@ -2,16 +2,19 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@features/*": ["projects/client-application/src/features/*"]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": false,
+    "strict": true,
     "noImplicitOverride": true,
-    "noImplicitReturns": false,
+    "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "noPropertyAccessFromIndexSignature": false,
+    "noPropertyAccessFromIndexSignature": true,
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
@@ -26,6 +29,6 @@
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": false
+    "strictTemplates": true
   }
 }
