@@ -86,10 +86,7 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": [
-              "projects/client-application/src/**/*.ts",
-              "projects/client-application/src/**/*.html"
-            ]
+            "lintFilePatterns": ["projects/client-application/src/**/*.ts", "projects/client-application/src/**/*.html"]
           }
         }
       }

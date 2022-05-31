@@ -27,8 +27,27 @@ Espace de travail Angular qui contient tous les outils et toutes les configurati
 
 ## Installation
 
+### Mise en place des sources et des dépendances
+
 - Cloner le dépôt en local `git@github.com:anct-cartographie-nationale/client-base.git`
 - Aller dans le dossier du projet et exécuter `yarn` pour installer les dépendances
+
+### Installer Husky
+
+[Husky](https://typicode.github.io/husky) est un outil de gestion des hooks git pour effectuer des tâches automatiques
+
+Mise en place de Husky à la racine du projet `client-base` :
+
+```bash
+yarn husky install
+```
+
+Rendre exécutable les fichiers qui contiennent les hooks :
+
+```bash
+chmod a+x .husky/commit-msg
+chmod a+x .husky/pre-commit
+```
 
 ## Utilisation
 
@@ -50,8 +69,22 @@ Pour en savoir plus sur la gestion des projets de bibliothèque Angular, voir le
 
 ### Nommage des branches
 
-- Une branche qui apporte une nouvelle fonctionnalité doit ête préfixé par `feature/` : `feature/ma-fonctionnalite`
-- Une branche qui apporte une correction doit ête préfixé par `fix/` : `fix/ma-correction`
+- Avant de créer une nouvelle branche de travail, récupérer les dernières modifications disponibles sur la branche `main`
+- La nouvelle branche de travail doit ête préfixée par `build/`, `chore/`, `ci/`, `docs/`, `feat/`, `fix/`, `perf/`, `refactor/`, `revert/`, `style/` ou `test/` en fonction du type de modification prévu, pour plus de détails à ce sujet, consulter [Conventional Commits cheat sheet](https://kapeli.com/cheat_sheets/Conventional_Commits.docset/Contents/Resources/Documents/index)
+- Une branche portant une version à publier doit être de la forme `release/X.Y` avec `X.Y` égal au numéro de majeur et de mineur de la release, cela signifie donc que tous les patches sont à appliquer sur la même branche pour chaque version mineure. Cette organisation permet de gérer plusieurs versions de la bibliothèque en parallèle sans mettre en péril la rétrocompatibilité.
+
+### Commits
+
+#### Convention
+
+Les commits de ce repository doivent respecter la syntaxe décrite par la spécification des [Commits Conventionnels](https://www.conventionalcommits.org/fr)
+
+#### Signature
+
+La branche `main`, ainsi que l'ensemble des branches de travail avec un préfixe valide requièrent que les commits soient signés :
+
+- La documentation de GitHub indique comment [configurer la signature des commits](https://docs.github.com/en/enterprise-server@3.5/authentication/managing-commit-signature-verification/about-commit-signature-verification)
+- Les utilisateurs de [keybase](https://keybase.io/) peuvent [signer leurs commits avec leur clé GPG sur Keybase](https://stephenreescarter.net/signing-git-commits-with-a-keybase-gpg-key/)
 
 ### Déployer
 
