@@ -1,0 +1,10 @@
+{
+  "extends": "../projects/client-application/tsconfig.app.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": ["../projects/client-application/**/*.spec.ts"],
+  "include": ["../projects/client-application/**/*"],
+  "files": ["./typings.d.ts"]
+}
