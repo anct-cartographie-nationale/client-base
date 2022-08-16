@@ -91,6 +91,116 @@
         }
       }
     },
+    "orientation": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/client-application/src/features/orientation",
+      "sourceRoot": "projects/client-application/src/features/orientation",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/orientation",
+            "index": "projects/client-application/src/index.html",
+            "main": "projects/client-application/src/features/orientation/orientation.ts",
+            "polyfills": "projects/client-application/src/polyfills.ts",
+            "tsConfig": "projects/client-application/src/features/orientation/tsconfig.orientation.json"
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "projects/client-application/src/environments/environment.ts",
+                  "with": "projects/client-application/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        }
+      }
+    },
+    "cartographie": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/client-application/src/features/cartographie",
+      "sourceRoot": "projects/client-application/src/features/cartographie",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/cartographie",
+            "index": "projects/client-application/src/index.html",
+            "main": "projects/client-application/src/features/cartographie/cartographie.ts",
+            "polyfills": "projects/client-application/src/polyfills.ts",
+            "tsConfig": "projects/client-application/src/features/cartographie/tsconfig.cartographie.json"
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "projects/client-application/src/environments/environment.ts",
+                  "with": "projects/client-application/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        }
+      }
+    },
     "@gouvfr-anct/mediation-numerique": {
       "projectType": "library",
       "root": "projects/@gouvfr-anct/mediation-numerique",
