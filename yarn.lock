@@ -1925,6 +1925,11 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
   integrity sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==
 
+"@gouvfr-anct/lieux-de-mediation-numerique@^1.12.1":
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/@gouvfr-anct/lieux-de-mediation-numerique/-/lieux-de-mediation-numerique-1.12.1.tgz#cc98c5a913de119a71f03d8668d3901518f0e635"
+  integrity sha512-MugAPcOl+HrIadaMLxs9cjTk/g6gFQwj62cqrALSRjEYalnffY7fX3Ba9a1wAquHdl/7baSmEJcHDjuNpo27Fw==
+
 "@gouvfr-anct/mediation-numerique@^0.0.19":
   version "0.0.19"
   resolved "https://registry.yarnpkg.com/@gouvfr-anct/mediation-numerique/-/mediation-numerique-0.0.19.tgz#57987345abf89ca8c36c7d8029d3d6c2cf90a3d3"
@@ -6415,10 +6420,10 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
-husky@^8.0.1:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-8.0.1.tgz#511cb3e57de3e3190514ae49ed50f6bc3f50b3e9"
-  integrity sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==
+husky@^8.0.2:
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-8.0.2.tgz#5816a60db02650f1f22c8b69b928fd6bcd77a236"
+  integrity sha512-Tkv80jtvbnkK3mYWxPZePGFpQ/tT3HNSs/sasF9P2YfkMezDl3ON37YN6jUUI4eTg5LcyVynlb6r4eyvOmspvg==
 
 i18next-browser-languagedetector@^6.1.4:
   version "6.1.4"
