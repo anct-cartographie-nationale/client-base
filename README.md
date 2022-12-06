@@ -90,7 +90,7 @@ La branche `main`, ainsi que l'ensemble des branches de travail avec un préfixe
 
 À partir du moment où le code est publié sur la branche `main`, il est prêt à être utilisé avec la commande `git clone` décrite dans la section [Installation](#installation).
 
-Les processus d'intégration en continu des projets dépendant ce cet espace de travail clonent ce dépôt afin de pouvoir exécuter les commandes nécessaires, pour :
+Les processus d'intégration en continu des projets dépendant de cet espace de travail clonent ce dépôt afin de pouvoir exécuter les commandes nécessaires, pour :
 
 - Le contrôle de la syntaxe du code
 - Le lancement des tests
