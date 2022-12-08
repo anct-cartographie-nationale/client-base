@@ -1926,9 +1926,9 @@
   integrity sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==
 
 "@gouvfr-anct/lieux-de-mediation-numerique@^1.12.1":
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/@gouvfr-anct/lieux-de-mediation-numerique/-/lieux-de-mediation-numerique-1.12.1.tgz#cc98c5a913de119a71f03d8668d3901518f0e635"
-  integrity sha512-MugAPcOl+HrIadaMLxs9cjTk/g6gFQwj62cqrALSRjEYalnffY7fX3Ba9a1wAquHdl/7baSmEJcHDjuNpo27Fw==
+  version "1.12.2"
+  resolved "https://registry.yarnpkg.com/@gouvfr-anct/lieux-de-mediation-numerique/-/lieux-de-mediation-numerique-1.12.2.tgz#767a86f4f8cea090aa26eb859559b0af7a8f0908"
+  integrity sha512-q5Tyiws3T4JDVSmvnE5xfzh0Z5g3081LMgyNVslLeWjKDArRCtIbyg+X+lL3BOXvif4ZWGZblOjSl1tZ9COHqg==
 
 "@gouvfr-anct/mediation-numerique@^0.0.19":
   version "0.0.19"
