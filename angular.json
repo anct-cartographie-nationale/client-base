@@ -26,7 +26,11 @@
             "polyfills": "projects/client-application/src/polyfills.ts",
             "tsConfig": "projects/client-application/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["projects/client-application/src/favicon.ico", "projects/client-application/src/assets"],
+            "assets": [
+              "projects/client-application/src/favicon.ico",
+              "projects/client-application/src/app.webmanifest",
+              "projects/client-application/src/assets"
+            ],
             "styles": ["projects/client-application/src/styles.scss", "node_modules/leaflet/dist/leaflet.css"],
             "scripts": []
           },
