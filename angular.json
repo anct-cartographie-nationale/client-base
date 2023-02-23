@@ -31,7 +31,7 @@
               "projects/client-application/src/app.webmanifest",
               "projects/client-application/src/assets"
             ],
-            "styles": ["projects/client-application/src/styles.scss", "node_modules/leaflet/dist/leaflet.css"],
+            "styles": ["projects/client-application/src/styles.scss", "./node_modules/maplibre-gl/dist/maplibre-gl.css"],
             "scripts": []
           },
           "configurations": {
