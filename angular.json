@@ -32,7 +32,8 @@
               "projects/client-application/src/assets"
             ],
             "styles": ["projects/client-application/src/styles.scss", "./node_modules/maplibre-gl/dist/maplibre-gl.css"],
-            "scripts": []
+            "scripts": [],
+            "allowedCommonJsDependencies": ["maplibre-gl", "opening_hours"]
           },
           "configurations": {
             "production": {
