@@ -206,6 +206,61 @@
         }
       }
     },
+    "coordinateurs": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/client-application/src/features/coordinateurs",
+      "sourceRoot": "projects/client-application/src/features/coordinateurs",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/coordinateurs",
+            "index": "projects/client-application/src/index.html",
+            "main": "projects/client-application/src/features/coordinateurs/coordinateurs.ts",
+            "polyfills": "projects/client-application/src/polyfills.ts",
+            "tsConfig": "projects/client-application/src/features/coordinateurs/tsconfig.coordinateurs.json"
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "projects/client-application/src/environments/environment.ts",
+                  "with": "projects/client-application/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        }
+      }
+    },
     "mediation-numerique": {
       "projectType": "application",
       "schematics": {
