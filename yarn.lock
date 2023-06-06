@@ -1763,10 +1763,10 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
   integrity sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==
 
-"@gouvfr-anct/lieux-de-mediation-numerique@^1.13.0":
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/@gouvfr-anct/lieux-de-mediation-numerique/-/lieux-de-mediation-numerique-1.13.0.tgz#897ed9a20db9d32f58c296a9c0a7fc24316c7c4a"
-  integrity sha512-l33Lw1wdZJgVl3/wKR5exS6ud31AXbGoH3SmOvH8PjpsiyfITEt+P+2J57ItTRaZ8zfHxJmfA20hnTZbZOCvdw==
+"@gouvfr-anct/lieux-de-mediation-numerique@^1.15.1":
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/@gouvfr-anct/lieux-de-mediation-numerique/-/lieux-de-mediation-numerique-1.15.1.tgz#05127fe0f6391172746b33332470bf354378899e"
+  integrity sha512-NXiBve6qMR/DrjcU5CMMNculfJme6ROvcRE2Xiyk9/FDki3xG/FW1N6XXa89Imu8UDscZtAqT5B0ho8rAeDr8A==
 
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"

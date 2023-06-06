@@ -23,7 +23,7 @@
     "@angular/platform-browser": "~15.1.4",
     "@angular/platform-browser-dynamic": "~15.1.4",
     "@angular/router": "~15.1.4",
-    "@gouvfr-anct/lieux-de-mediation-numerique": "^1.13.0",
+    "@gouvfr-anct/lieux-de-mediation-numerique": "^1.15.1",
     "@maplibre/ngx-maplibre-gl": "^14.0.0-pre.2",
     "maplibre-gl": "^3.0.0-pre",
     "opening_hours": "^3.8.0",
